@@ -1,0 +1,36 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.col-lg-4 {
+  width: 32.333%;
+}
+.col-lg-6 {
+  width: 48%;
+}
+.col-lg-12 {
+  width: 100%;
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .col-md-4 {
+    width: 32.333%;
+  }
+  .col-md-6 {
+    width: 48%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  .col-4 {
+    width: 32.333%;
+  }
+  .col-6 {
+    width: 48%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}

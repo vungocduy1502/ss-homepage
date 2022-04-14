@@ -5,36 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/style.css">
     <title>SS</title>
 </head>
 
 <body>
 
-    <div class="background_image_header">
+    <div class="banner_image_header">
         <Header>
-            <div class="d-flex">
+            <div class="header_menu">
                 <img class="header_logo" src="images/logo.png" alt="Logo SS">
-                <ul class="header_menu">
-                    <li>new arrivals</li>
-                    <li>limited edition</li>
-                    <li>baby</li>
-                    <li>kids</li>
-                    <li>SHOP THE LOOK</li>
-                    <li>women</li>
-                    <li>s&s home</li>
-                    <li>SALE</li>
-                    <li>gift card</li>
-                </ul>
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="topnav_text">new arrivals</a>
+                    <a href="#home" class="topnav_text">limited edition</a>
+                    <a href="#home" class="topnav_text">baby</a>
+                    <a href="#home" class="topnav_text">kids</a>
+                    <a href="#home" class="topnav_text">SHOP THE LOOK</a>
+                    <a href="#home" class="topnav_text">women</a>
+                    <a href="#home" class="topnav_text">s&s home</a>
+                    <a href="#home" class="topnav_text">SALE</a>
+                    <a href="#home" class="topnav_text">gift card</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars  fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
             <ul class="header_icon">
                 <li><i class="icon-search"></i> </li>
                 <li><i class="icon-like"></i> </li>
-                <li><i class="icon-cart"></i> </li>
-                <li><i class="icon-user"></i> </li>
+                <li class="d-none"><i class="icon-cart"></i> </li>
+                <li class="d-none"><i class="icon-user"></i> </li>
             </ul>
         </Header>
+        <div class="banner_content">
+            <h4>new Summer <br> arrivals Sale Now</h4>
+            <button class="wrapper">
+                <a href="#" class="height-51 color-fff"><span>new arrivals</span></a>
+            </button>
+        </div>
     </div>
+
+    <section>
+        <div class="product">
+            <h4>discover more</h4>
+            <div class="product_items row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="item">
+                        <img src="/images/item1.png" alt="shop kid">
+                    </div>
+                    <h6>shop kids</h6>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="item">
+                        <img src="/images/item2.png" alt="shop baby">
+                    </div>
+                    <h6>shop baby</h6>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="item">
+                        <img src="/images/item3.png" alt="shop limited edition">
+                    </div>
+                    <h6>shop limited edition</h6>
+                </div>
+            </div>
+        </div>
+        <div class="product_more">
+            <h4>EXPLORE</h4>
+            <button class="wrapper">
+                <a href="#" class="height-35 font-11 color-333 bg-fff"><span>new arrivals</span></a>
+            </button>
+            <button class="wrapper">
+                <a href="#" class="height-35 font-11 color-333 bg-fff"><span>baby</span></a>
+            </button>
+            <button class="wrapper">
+                <a href="#" class="height-35 font-11 color-333 bg-fff"><span>kids</span></a>
+            </button>
+            <button class="wrapper">
+                <a href="#" class="height-35 font-11 color-333 bg-fff"><span>shop the look</span></a>
+            </button><button class="wrapper">
+                <a href="#" class="height-35 font-11 color-333 bg-fff"><span>women</span></a>
+            </button>
+            <button class="wrapper">
+                <a href="#" class="height-35 font-11 color-333 bg-fff"><span>sale</span></a>
+            </button>
+            <button class="wrapper">
+                <a href="#" class="height-35 font-11 color-333 bg-fff"><span>S&S home</span></a>
+            </button>
+        </div>
+    </section>
+    <footer>
+        <ul class="footer_about">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CUSTOMER CARE</a></li>
+            <li><a href="#">RETURNS</a></li>
+            <li><a href="#">STOCKISTS</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">newsletter</a></li>
+        </ul>
+        <div class="footer_logo">
+            <img src="/images/logo-footer.png" alt="logo footer">
+        </div>
+
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

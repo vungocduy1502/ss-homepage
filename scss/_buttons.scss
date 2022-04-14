@@ -1,0 +1,71 @@
+.btn {
+  border-radius: 0;
+}
+// .btn-while {
+//   background-color: #fff;
+//   color: #000;
+// }
+.height-51 {
+  height: 51px;
+  line-height: 51px;
+}
+.height-35 {
+  height: 35px;
+  line-height: 35px;
+}
+.font-11 {
+  font-size: 11px;
+}
+.font-13 {
+  font-size: 13px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.color-333 {
+  color: #333;
+}
+.color-fff {
+  color: #fff;
+}
+.bg-fff {
+  background-color: #fff;
+}
+.wrapper {
+  a {
+    display: block;
+    width: auto;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+    padding: 0 12px;
+  }
+
+  a span {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    transition: all 0.35s;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  a:hover:after {
+    width: 100%;
+  }
+}
