@@ -1,36 +1,33 @@
-.topnav {
-  overflow: hidden;
-  padding-left: 54px;
-}
 .icon i {
   color: #000;
 }
-.topnav a {
-  float: left;
-  display: block;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding-right: 25px;
-}
 
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .topnav a {
+.topnav {
+  overflow: hidden;
+  padding-left: 54px;
+  a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-right: 25px;
+  }
+  a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  .icon {
     display: none;
   }
-
+}
+@media screen and (max-width: 768px) {
   .topnav {
+    a {
+      display: none;
+    }
     a.icon {
       display: block;
       position: absolute;
@@ -39,7 +36,6 @@
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   .d-none {
     display: none;

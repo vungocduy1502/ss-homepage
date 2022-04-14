@@ -1,0 +1,46 @@
+/* Css header */
+.banner_image_header {
+  background-image: url("/images/background-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+  height: 768px;
+  position: relative;
+}
+header {
+  height: 111px;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  justify-content: space-between;
+}
+.header_menu {
+  display: flex;
+  align-items: center;
+}
+.header_icon {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  li {
+    margin-right: 23px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.header_logo {
+  width: 111px;
+  height: 35px;
+}
+@media screen and (max-width: 768px) {
+  .banner_image_header {
+    background-position: center;
+  }
+  header {
+    height: 80px;
+  }
+  .header_icon {
+    margin-right: 23px;
+  }
+}
