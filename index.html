@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="scss/style.css">
+    <link href="aos-master/dist/aos.css" rel="stylesheet">
+    <script src="aos-master/dist/aos.js"></script>
     <title>SS</title>
 </head>
 
 <body>
     <!-- banner image -->
-    <div class="banner_image_header">
+    <div class="banner_image_header" data-aos="fade-down">
 
         <!-- header  -->
         <Header>
@@ -42,7 +44,7 @@
         </Header>
         <!-- end header -->
 
-        <div class="banner_content">
+        <div class="banner_content" data-aos="zoom-in">
             <h4>new Summer <br> arrivals Sale Now</h4>
             <button class="wrapper">
                 <a href="#" class="height-51 color-fff"><span>new arrivals</span></a>
@@ -54,21 +56,21 @@
     <!-- content  -->
     <section>
         <div class="product">
-            <h4>discover more</h4>
+            <h4 data-aos="zoom-in-right">discover more</h4>
             <div class="product_items row">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-right">
                     <div class="item">
                         <img src="./images/item1.png" alt="shop kid">
                     </div>
                     <h6>shop kids</h6>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-down">
                     <div class="item">
                         <img src="./images/item2.png" alt="shop baby">
                     </div>
                     <h6>shop baby</h6>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left">
                     <div class="item">
                         <img src="./images/item3.png" alt="shop limited edition">
                     </div>
@@ -76,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="product_more">
+        <div class="product_more" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <h4>EXPLORE</h4>
             <button class="wrapper">
                 <a href="#" class="height-35 font-11 color-333 bg-fff"><span>new arrivals</span></a>
@@ -105,7 +107,7 @@
     <!-- footer -->
     <footer>
         <!-- footer about -->
-        <ul class="footer_about">
+        <ul class="footer_about" data-aos="zoom-in">
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">CUSTOMER CARE</a></li>
             <li><a href="#">RETURNS</a></li>
